@@ -60,17 +60,17 @@ module.exports.getPieChartData = (req, res) => {
   const data = [
     {
       fill: "#F6DC7D",
-      name: "Basic Trees 16.67%",
+      name: "Basic Trees",
       value: 1000,
     },
     {
       fill: "#98D89E",
-      name: "Custom Short Pants 33.33%",
+      name: "Custom Short Pants",
       value: 2000,
     },
     {
       fill: "#EE8484",
-      name: "Super Hoodies 50.00%",
+      name: "Super Hoodies",
       value: 3000,
     },
   ];
