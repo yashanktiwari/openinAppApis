@@ -57,22 +57,25 @@ module.exports.getBarChartData = (req, res) => {
 };
 
 module.exports.getPieChartData = (req, res) => {
-  const data = [
-    {
-      fill: "#F6DC7D",
-      name: "Basic Trees",
-      value: 1000,
-    },
-    {
-      fill: "#98D89E",
-      name: "Custom Short Pants",
-      value: 2000,
-    },
-    {
-      fill: "#EE8484",
-      name: "Super Hoodies",
-      value: 3000,
-    },
-  ];
+  const data = {
+    labels: ['Basic Trees', 'Custom Short Pants', 'Super Hoodies'],
+    datasets: [
+      {
+        label: '% of Votes',
+        data: [14, 31, 55],
+        backgroundColor: [
+          '#EE8484',
+          '#F6DC7D',
+          '#0CD664',
+        ],
+        borderColor: [
+          '#EE8484',
+          '#F6DC7D',
+          '#0CD664',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
   res.send(data);
 };
