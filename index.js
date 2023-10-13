@@ -1,7 +1,10 @@
 const express = require("express");
 const PORT = 3000;
+const cors = require("cors");
 const app = express();
 const { getDummyData, getBarChartData, getPieChartData } = require("./allFunction");
+
+app.use(cors());
 
 const appRouter = express.Router();
 
